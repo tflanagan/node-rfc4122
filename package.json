@@ -1,0 +1,34 @@
+{
+  "name": "rfc4122",
+  "engines": {
+    "node": ">=0.12.*"
+  },
+  "version": "1.0.0",
+  "description": "JavaScript implementation of RFC4122: A Universally Unique IDentifier (UUID) URN Namespace",
+  "main": "rfc4122.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [
+    "rfc4122",
+    "RFC4122",
+    "UUID",
+    "uuid",
+    "GUID",
+    "guid",
+    "hash"
+  ],
+  "git": "git://github.com/tflanagan/node-rfc4122.git#master",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tflanagan/node-rfc4122.git"
+  },
+  "homepage": "https://github.com/tflanagan/node-rfc4122",
+  "bugs": {
+    "url": "https://github.com/tflanagan/node-rfc4122/issues"
+  },
+  "author": {
+    "name": "Tristian Flanagan",
+    "email": "tristian.flanagan@comcast.net"
+  },
+  "license": "Apache-2.0"
+}
