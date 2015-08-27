@@ -3,7 +3,7 @@
   "engines": {
     "node": ">=0.12.*"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript implementation of RFC4122: A Universally Unique IDentifier (UUID) URN Namespace",
   "main": "rfc4122.js",
   "dependencies": {},
