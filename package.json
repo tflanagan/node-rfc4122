@@ -1,6 +1,6 @@
 {
   "name": "rfc4122",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JavaScript implementation of RFC4122: A Universally Unique IDentifier (UUID) URN Namespace",
   "keywords": [
     "rfc4122",
@@ -43,8 +43,7 @@
     "release-minor": "npm run build && git add -A . && git commit -m \"Release Minor Build\" && npm version minor -m \"Release Minor v%s\" && npm publish && git push --follow-tags",
     "release-major": "npm run build && git add -A . && git commit -m \"Release Major Build\" && npm version major -m \"Release Major v%s\" && npm publish && git push --follow-tags"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "browserify": "*",
     "minify": "*"
