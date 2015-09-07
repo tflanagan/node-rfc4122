@@ -1,13 +1,7 @@
 {
   "name": "rfc4122",
-  "engines": {
-    "node": ">=0.12.*"
-  },
   "version": "1.0.1",
   "description": "JavaScript implementation of RFC4122: A Universally Unique IDentifier (UUID) URN Namespace",
-  "main": "rfc4122.js",
-  "dependencies": {},
-  "devDependencies": {},
   "keywords": [
     "rfc4122",
     "RFC4122",
@@ -17,18 +11,46 @@
     "guid",
     "hash"
   ],
-  "git": "git://github.com/tflanagan/node-rfc4122.git#master",
+  "homepage": "https://github.com/tflanagan/node-rfc4122",
+  "bugs": {
+    "url": "https://github.com/tflanagan/node-rfc4122/issues",
+    "email": "tristian.flanagan@comcast.net"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Tristian Flanagan",
+    "url": "https://github.com/tflanagan",
+    "email": "tristian.flanagan@comcast.net"
+  },
+  "maintainers": [
+    {
+      "name": "tflanagan",
+      "url": "https://github.com/tflanagan",
+      "email": "tristian.flanagan@comcast.net"
+    }
+  ],
+  "contributors": [
+    "Tristian Flanagan <tristian.flanagan@comcast.net> (https://github.com/tflanagan)"
+  ],
+  "main": "rfc4122.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/tflanagan/node-rfc4122.git"
   },
-  "homepage": "https://github.com/tflanagan/node-rfc4122",
-  "bugs": {
-    "url": "https://github.com/tflanagan/node-rfc4122/issues"
+  "scripts": {
+    "build": "browserify rfc4122.js > rfc4122.browserify.js && cat devTools\\LICENSE.js > rfc4122.browserify.min.js && minify rfc4122.browserify.js >> rfc4122.browserify.min.js",
+    "release-patch": "npm run build && git add -A . && git commit -m \"Release Patch Build\" && npm version patch -m \"Release Patch v%s\" && npm publish && git push --follow-tags",
+    "release-minor": "npm run build && git add -A . && git commit -m \"Release Minor Build\" && npm version minor -m \"Release Minor v%s\" && npm publish && git push --follow-tags",
+    "release-major": "npm run build && git add -A . && git commit -m \"Release Major Build\" && npm version major -m \"Release Major v%s\" && npm publish && git push --follow-tags"
   },
-  "author": {
-    "name": "Tristian Flanagan",
-    "email": "tristian.flanagan@comcast.net"
+  "dependencies": {
   },
-  "license": "Apache-2.0"
+  "devDependencies": {
+    "browserify": "*",
+    "minify": "*"
+  },
+  "engines": {
+    "node": ">=0.12.*"
+  },
+  "git": "git://github.com/tflanagan/node-rfc4122.git#master"
 }
