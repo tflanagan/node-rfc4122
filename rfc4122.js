@@ -155,8 +155,9 @@ let bufferToHex = function(buffer, version){
 };
 
 /* Expose Helpers */
-RFC4122.hexdec = hexdec;
-RFC4122.named  = named;
+RFC4122.hexdec       = hexdec;
+RFC4122.named        = named;
+RFC4122.bufferToHex  = bufferToHex;
 
 /* Export Module */
 if(typeof(module) !== 'undefined' && module.exports){
