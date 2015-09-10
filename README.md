@@ -20,16 +20,10 @@ Browserify
 This library works out of the box with Browserify.
 ```
 $ npm install rfc4122
-$ npm install -g browserify
-$ browserify node_modules/rfc4122 > rfc4122.browserify.js
-```
-The file Browserify creates is ~522KB. It exposes the RFC4122 object to the global namespace.
-
-Minifying the file results in a ~283KB file.
-
-```
-$ npm install -g minifier
-$ minify --output rfc4122.browserify.min.js rfc4122.browserify.js
+$ npm install -g babel browserify minifier
+$ babel rfc4122.js > rfc4122.es5.js
+$ browserify rfc4122.es5.js > rfc4122.browserify.js
+$ minify rfc4122.browserify.js > rfc4122.browserify.min.js
 ```
 
 The use is the same as in Nodejs, but there is no need to ```require('rfc4122')```.
@@ -46,9 +40,9 @@ The use is the same as in Nodejs, but there is no need to ```require('rfc4122')`
 Example
 -------
 ```javascript
-var RFC4122 = require('rfc4122');
+const RFC4122 = require('rfc4122');
 
-var rfc4122 = new RFC4122();
+let rfc4122 = new RFC4122();
 
 rfc4122.v1();
 // ebc386d0-4c07-11a5-0ea7-f1d320998c65
