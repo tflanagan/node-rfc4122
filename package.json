@@ -1,6 +1,6 @@
 {
   "name": "rfc4122",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "JavaScript implementation of RFC4122: A Universally Unique IDentifier (UUID) URN Namespace",
   "keywords": [
     "rfc4122",
