@@ -38,6 +38,7 @@
     "url": "git://github.com/tflanagan/node-rfc4122.git"
   },
   "scripts": {
+    "test": "node tests/runAll.js",
     "build": "babel rfc4122.js > rfc4122.es5.js && browserify rfc4122.es5.js > rfc4122.browserify.js && cat devTools\\LICENSE.js > rfc4122.browserify.min.js && minify rfc4122.browserify.js >> rfc4122.browserify.min.js",
     "release-patch": "npm run build && git add -A . && git commit -m \"Release Patch Build\" && npm version patch -m \"Release Patch v%s\" && npm publish && git push --follow-tags",
     "release-minor": "npm run build && git add -A . && git commit -m \"Release Minor Build\" && npm version minor -m \"Release Minor v%s\" && npm publish && git push --follow-tags",
@@ -46,7 +47,9 @@
   "dependencies": {},
   "devDependencies": {
     "browserify": "*",
-    "minify": "*"
+    "minify": "*",
+    "babel": "*",
+    "bluebird": "*"
   },
   "engines": {
     "node": ">=0.12.*"

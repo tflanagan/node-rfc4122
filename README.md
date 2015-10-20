@@ -1,7 +1,7 @@
 node-rfc4122
 ==============
 
-[![npm license](https://img.shields.io/npm/l/rfc4122.svg)](https://www.npmjs.com/package/rfc4122) [![npm version](https://img.shields.io/npm/v/rfc4122.svg)](https://www.npmjs.com/package/rfc4122) [![npm downloads](https://img.shields.io/npm/dm/rfc4122.svg)](https://www.npmjs.com/package/rfc4122)
+[![npm license](https://img.shields.io/npm/l/rfc4122.svg)](https://www.npmjs.com/package/rfc4122) [![npm version](https://img.shields.io/npm/v/rfc4122.svg)](https://www.npmjs.com/package/rfc4122) [![npm downloads](https://img.shields.io/npm/dm/rfc4122.svg)](https://www.npmjs.com/package/rfc4122) [![Build Status](https://travis-ci.org/tflanagan/node-rfc4122.svg)](https://travis-ci.org/tflanagan/node-rfc4122)
 
 JavaScript implementation of RFC4122: A Universally Unique IDentifier (UUID) URN Namespace
 
