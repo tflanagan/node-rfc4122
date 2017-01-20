@@ -14,23 +14,23 @@
   "homepage": "https://github.com/tflanagan/node-rfc4122",
   "bugs": {
     "url": "https://github.com/tflanagan/node-rfc4122/issues",
-    "email": "tristian.flanagan@comcast.net"
+    "email": "contact@tristianflanagan.com"
   },
   "license": "Apache-2.0",
   "author": {
     "name": "Tristian Flanagan",
     "url": "https://github.com/tflanagan",
-    "email": "tristian.flanagan@comcast.net"
+    "email": "contact@tristianflanagan.com"
   },
   "maintainers": [
     {
       "name": "tflanagan",
       "url": "https://github.com/tflanagan",
-      "email": "tristian.flanagan@comcast.net"
+      "email": "contact@tristianflanagan.com"
     }
   ],
   "contributors": [
-    "Tristian Flanagan <tristian.flanagan@comcast.net> (https://github.com/tflanagan)"
+    "Tristian Flanagan <contact@tristianflanagan.com> (https://github.com/tflanagan)"
   ],
   "main": "rfc4122.js",
   "repository": {
