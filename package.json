@@ -1,6 +1,6 @@
 {
   "name": "rfc4122",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "JavaScript implementation of RFC4122: A Universally Unique IDentifier (UUID) URN Namespace",
   "keywords": [
     "rfc4122",
@@ -33,6 +33,7 @@
     "Tristian Flanagan <contact@tristianflanagan.com> (https://github.com/tflanagan)"
   ],
   "main": "rfc4122.js",
+  "types": "rfc4122.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/tflanagan/node-rfc4122.git"
