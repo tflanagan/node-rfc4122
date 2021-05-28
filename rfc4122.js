@@ -96,10 +96,10 @@ class RFC4122 {
 	}
 
 	v4f () {
-		let d0 = this.prng.random() * 0xffffffff|0,
-			d1 = this.prng.random() * 0xffffffff|0,
-			d2 = this.prng.random() * 0xffffffff|0,
-			d3 = this.prng.random() * 0xffffffff|0;
+		let d0 = this.prng.random() * 0x100000000|0,
+			d1 = this.prng.random() * 0x100000000|0,
+			d2 = this.prng.random() * 0x100000000|0,
+			d3 = this.prng.random() * 0x100000000|0;
 
 		return byteToHex[d0 & 0xff] +              byteToHex[d0 >> 8 & 0xff] +  byteToHex[d0 >> 16 & 0xff] + byteToHex[d0 >> 24 & 0xff] + '-' +
 			   byteToHex[d1 & 0xff] +              byteToHex[d1 >> 8 & 0xff] +  '-' +
